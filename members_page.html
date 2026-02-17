@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client's Page</title>
+     <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class = "container">
+        <section class = "leftbox">
+            <nav>
+                <a onclick="tabs(0)" class="tab active">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a onclick="tabs(1)" class="tab">
+                    <i class="fa fa-credit-card"></i>
+                </a>
+                <a onclick="tabs(2)" class="tab">
+                    <i class="fa fa-tv"></i>
+                </a>                
+                <a onclick="tabs(3)" class="tab">
+                    <i class="fa fa-tasks"></i>
+                </a>                
+                <a onclick="tabs(4)" class="tab">
+                    <i class="fa fa-cog"></i>
+                </a>
+            </nav>
+        </section>
+        <div class="rightbox">
+            <section class="profile tabShow">
+                <h1>Personal Info</h1>
+                <h2>Full Name</h2>
+                <input type="text" class="input" value = "Client One">
+                <h2>Gender</h2>
+                <div>
+                    <label for="male">Male</label>
+                    <input type = "radio" name="gender" id = "male" value="Male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type = "radio" name="gender" id = "female" value="Female">
+                </div>
+                <h2 for="">South African ID number:</h2>
+                <input type="text" required><br>
+                <h2>Email Address</h2>
+                <input type="text" class="input" value = "client@gmail.com">
+                <h2>Password</h2>
+                <input type="password" class="input" value = "clients-password">
+                <button class="btn">Update</button>
+
+            </section>
+            <section class="payment tabShow">
+                <h1>Payment Info</h1>
+                <h2>Payment Method</h2>
+                <input type="text" class="input" value = "MasterCard - 0440 - **** **** 1992">
+                 <button class="btn">Update</button>
+                <p></p>
+            <h2>Bank Name:</h2>
+            <select name="bank_names" >
+                <option value="select">--Select Bank--</option>
+                <option value="Absa Bank">Absa Bank</option>
+                <option value="Capitec Bank">Capitec Bank</option>
+                <option value="First National Bank">First National Bank (FNB)</option>
+                <option value="Nedbank">Nedbank</option>
+                <option value="Standard Bank">Standard Bank</option>
+                <option value="Bank Zero">Bank Zero</option>
+                <option value="Discovery Bank">Discovery Bank</option>
+                <option value="TymeBank">TymeBank</option>
+                <option value="Old Mutual Bank">Old Mutual Bank</option>
+                <option value="African Bank">African Bank</option>
+                <option value="Bidvest Bank">Bidvest Bank</option>
+                <option value="Investec Bank">Investec Bank</option>
+                <option value="Investec Bank">Other</option>
+            </select>
+            <h2>Account holder name:</h2>
+            <input type="text" required><br>
+
+            <h2>Account Number:</h2>
+            <input type="text" ><br>
+
+            <h2>Account type</h2>
+            <input type="radio" name ="account_type">
+            <label for="">Savings</label><br>
+            <input type="radio"name ="account_type" >
+            <label for="">Cheque</label><br>
+            <input type="radio" name ="account_type">
+            <label for="">Debit</label><br><br>
+                <h2>Billing Address</h2>
+                <input type="text" class="input" value = "1717 Sommer Street DownTown">
+                <button class="btn">Update</button>
+                <h2>Zip-Code</h2>
+                <input type="text" class="input" value = "654321">
+                <button class="btn">Update</button>
+                <!-- Swift codes-->
+                <h2>Billing Date</h2>
+                
+                <input type="date" id="Billing Date" name="Billing Date">
+               
+            </section>
+            <section class="subscription tabShow">
+                <h1>Subscription Info</h1>
+                <h2>Payment Date</h2>
+                <input type="date" id="Payment Date" name="Payment Date">
+
+                <h2>Next Charges</h2>
+                <p>R600.00 <span>Including Tax</span></p> <!-- How does span work?? -->
+            <h2>Plan Types</h2>
+                <label for="banks">Plan:</label>
+            <select name="Plan Types" >
+                <option value="select">Standard Plan</option>
+                <option value="Absa Bank">Premium Plan</option>
+                <option value="Capitec Bank">VIP Plan</option>
+            </select><br><br>
+                <h2>Monthly</h2>
+                <p>R350.00/month</p>
+                <button class="btn">Update</button>
+            </section>
+            <section class="privacy tabShow">
+                <h1>Privacy Settings</h1>
+                <h2>Manage Email notification.</h2>
+                <p></p>
+                <h2>Manage Privacy Settings</h2>
+                <p></p>
+                <h2>View Terms Of Use</h2>
+                <p></p>
+                <button class="btn">Update</button>
+            </section>
+    
+            <section class="settings tabShow">
+                <h1>Account Settings</h1>
+                <h2>Cancel Subscription</h2>
+                <button class="btn">Cancel Subscription</button>
+                <p></p>
+                <h2>Change Subscription</h2>
+                
+                <select name="Plan Types" >
+                <option value="select">Standard Plan</option>
+                <option value="Absa Bank">Premium Plan</option>
+                <option value="Capitec Bank">VIP Plan</option>
+                <p></p>
+                <h2>Your Devices</h2>
+                <p></p>
+                <h2>Referrals</h2>
+                <p></p>
+                <button class="btn">Update</button>
+            </section>
+        </div>
+    </div>
+
+   
+</body>
+<footer>Done by JMKTN</footer>
+</html>

@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Abongile Jojozi">
+        <meta name="description" content="This is my testing web page.">
+        <title>Manager Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <header>
+
+            <h1>Zakafella Manager Dashboard</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Members</a>
+                    </li>
+                    <li>
+                        <a href="#">Requests</a>
+                    </li>
+                    <li>
+                        <a href="#">Loans</a>
+                    </li>
+                    <li>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Overview</h2>
+                <p>Total Members: 9</p>
+                <p>Total Funds Collected: R120000.00</p>
+                <p>Available Balance: R85000.00</p>
+                <p>Pending Requests: 3</p>
+            </section>
+
+            <section>
+                <h2>Pending Request</h2>
+                
+                <table>
+                    
+                    <thead>
+                        <tr>
+                            <th>MemberId</th>
+                            <th>Member</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Reason</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Jack Daniels
+                            </td>
+                            <td>
+                                Loan
+                            </td>
+                            <td>
+                                R2000.00
+                            </td>
+                            <td>
+                                Emergency
+                            </td>
+                            <td>
+                                <button>Approve</button>
+                                <button>Reject</button>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                Mlulami Ndamase
+                            </td>
+                            <td>
+                                Loan
+                            </td>
+                            <td>
+                                R1000.00
+                            </td>
+                            <td>
+                                Emergency
+                            </td>
+                            <td>
+                                <button>Approve</button>
+                                <button>Reject</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                9
+                            </td>
+                            <td>
+                                Fahim Raul 
+                            </td>
+                            <td>
+                                Loan
+                            </td>
+                            <td>
+                                R1500.00
+                            </td>
+                            <td>
+                                School fees
+                            </td>
+                            <td>
+                                <button>Approve</button>
+                                <button>Reject</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        
+            <section>
+
+                <h2>Monthly Contributions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MemberId</th>
+                            <th>Member</th>
+                            <th>Month</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>Jonathan Clark</td>
+                            <td>March</td>
+                            <td>Paid</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Nomandla Mthetho</td>
+                            <td>March</td>
+                            <td><mark>Outstanding</mark></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Zoleka Booi</td>
+                            <td>March</td>
+                            <td>Paid</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+
+                <h2>Active Loans</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MemberID</th>
+                            <th>Member</th>
+                            <th>Amount</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>Samkelo Dyantyi</td>
+                            <td>R2000.00</td>
+                            <td>R250.00</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Chris Tucker</td>
+                            <td>R25000.00</td>
+                            <td>R7500.00</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Fahim Raul</td>
+                            <td>R2500.00</td>
+                            <td>R1235.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+
+                <h2>Members</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>MemberID</th>
+                            <th>Full Name</th>
+                            <th>Email Address</th>
+                            <th>Phone Number</th>
+                            <th>Home Address</th>
+                            <th>Date Joined</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Zoleka Booi</td>
+                            <td>zolekabooi@gmail.com</td>
+                            <td>078 523 6598</td>
+                            <td>
+                                <address>
+                                    52 Tacos Street
+                                    Grahamstown 
+                                    6139
+                                </address>
+                            </td>
+                            <td>15/02/2026</td>
+                            <td>Active</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Jack Daniels</td>
+                            <td>jackdaniels@gmail.com</td>
+                            <td>082 451 7789</td>
+                            <td>
+                                <address>
+                                    14 Market Street
+                                    Port Elizabeth
+                                    6001
+                                </address>
+                            </td>
+                            <td>03/11/2025</td>
+                            <td>Suspended</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Samkelo Dyantyi</td>
+                            <td>samkelo.dyantyi@gmail.com</td>
+                            <td>073 884 2190</td>
+                            <td>
+                                <address>
+                                    88 Main Road
+                                    East London
+                                    5201
+                                </address>
+                            </td>
+                            <td>22/07/2025</td>
+                            <td>Active</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Jonathan Clark</td>
+                            <td>jon.clark@gmail.com</td>
+                            <td>081 332 9044</td>
+                            <td>
+                                <address>
+                                    23 Church Street
+                                    Cape Town
+                                    8001
+                                </address>
+                            </td>
+                            <td>14/01/2026</td>
+                            <td>Active</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Mlulami Ndamase</td>
+                            <td>mlulami.ndamase@gmail.com</td>
+                            <td>076 559 1182</td>
+                            <td>
+                                <address>
+                                    9 Freedom Avenue
+                                    Mthatha
+                                    5100
+                                </address>
+                            </td>
+                            <td>09/09/2025</td>
+                            <td>Active</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Chris Tucker</td>
+                            <td>chris.tucker@gmail.com</td>
+                            <td>074 903 6675</td>
+                            <td>
+                                <address>
+                                    101 Long Street
+                                    Johannesburg
+                                    2000
+                                </address>
+                            </td>
+                            <td>30/12/2025</td>
+                            <td>Active</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>Nomandla Mthetho</td>
+                            <td>nomandla.mthetho@gmail.com</td>
+                            <td>083 117 5520</td>
+                            <td>
+                                <address>
+                                    77 Madiba Drive
+                                    Durban
+                                    4001
+                                </address>
+                            </td>
+                            <td>18/04/2025</td>
+                            <td>Active</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>James Bond</td>
+                            <td>j.bond007@gmail.com</td>
+                            <td>072 661 9033</td>
+                            <td>
+                                <address>
+                                    12 Ocean View Road
+                                    Pretoria
+                                    0002
+                                </address>
+                            </td>
+                            <td>05/08/2025</td>
+                            <td>Active</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>Fahim Raul</td>
+                            <td>fahim.raul@gmail.com</td>
+                            <td>079 448 2291</td>
+                            <td>
+                                <address>
+                                    45 Sunrise Boulevard
+                                    Bloemfontein
+                                    9301
+                                </address>
+                            </td>
+                            <td>27/06/2025</td>
+                            <td>Active</td>
+                            <td><button>Remove</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+
+
+</html>

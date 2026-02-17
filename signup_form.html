@@ -30,7 +30,14 @@
             <label for="">Confirm Password*:</label><br>
             <input type="password" required><br>
 
-
+            <p>Gender</p>
+            <input type="radio" name ="gender">
+            <label for="">Male</label><br>
+            <input type="radio"name ="gender" >
+            <label for="">Female</label><br>
+            <input type="radio"name ="gender" >
+            <label for="">Prefer not to say</label><br>
+            <br>
 
             <p>Financial Info</p>
             <p>Employment status:</p>
@@ -49,7 +56,7 @@
             
 
             <p>Banking details</p>
-            <label for="banks">Bank Name:</label>
+            <label for="banks">Bank Name:<br></label>
             <select name="bank_names" >
                 <option value="select">--Select Bank--</option>
                 <option value="Absa Bank">Absa Bank</option>
@@ -67,7 +74,7 @@
             </select><br><br>
 
             <label for="">Account holder name*:</label><br>
-            <input type="text" required><br>
+            <input type="text" required><br><br>
 
             <label for="">Account Number:</label><br>
             <input type="number" ><br>
@@ -82,7 +89,16 @@
 
             <p>Stokvel Contribution</p>
             <label for="">Monthly Amount:</label><br>
-            <input type="number" min = 100><br>
+            <select name="plan" id="">
+                <option value="">--select--</option>
+                <option value="">Standard (R350)</option>
+                <option value="">Premium (R750)</option>
+                <option value="">VIP (R1000)</option>
+            </select> 
+            <br> <br>
+
+            <label for="">Zip Code:<br></label>
+            <input type="number"> <br> <br>
 
             <label for="">Preferred Payment Date:</label><br>
             <select id="payment_day" name="payment_day" required>
